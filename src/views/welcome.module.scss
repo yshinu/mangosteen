@@ -1,0 +1,22 @@
+.warpper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    > header{
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    > main{
+        flex-grow: 1;
+    }
+    > footer{
+        flex-shrink: 0;
+    }
+}
