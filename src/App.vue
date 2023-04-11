@@ -1,19 +1,17 @@
 <template>
   <div>
-你好
+  {{ count }}
   </div>
+  <button @click="onClick">+1</button>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script  setup lang="ts">
+import { ref } from 'vue';
 
-export default defineComponent({
-  setup () {
-    
-
-    return {}
-  }
-})
+const count = ref(0)
+const onClick = function(){
+  count.value++
+}
 </script>
 
 <style scoped>
