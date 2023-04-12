@@ -10,8 +10,7 @@ export const Welcome = defineComponent({
         <img src={logo} alt="logo"/>
         <h1>芒果记账</h1>
       </header>
-        <main>身体<RouterView /></main>
-        <footer>尾</footer>
+        <main><RouterView /></main>
       </div>
     );
   },
